@@ -1,0 +1,37 @@
+# Arriving in Rito Village
+Initialize 1 Torch 1 WoodcuttersAxe 1 RoyalClaymore 1 TravelersBow 1 FalconBow 1 NormalArrow 1 Potlid 1 Ruby 2 HylianShroom 2 SpicyPepper 2 Apple 2 MightyThistle 5 EnduraCarrot 2 Durian 5 LotusSeed 1 HightailLizard 1 AncientCore 1 Fairy 1 Slate 8 SpiritOrb 1 Glider
+#Cook 3 Endura Meal and 1 Speed Potion
+Drop 3 EnduraCarrot 3 LotusSeed 1 HightailLizard 1 AncientCore
+Get 3 EnduraFood 1 HastyElixir
+#Sell Ruby and use HylianShroom, SpicyPepper and Apple for breaking slots
+Sell 1 Ruby 2 HylianShroom 2 SpicyPepper 2 Apple
+Break 3 Slots
+Save
+Reload
+#Sort key items to sync gamedata
+Sync GameData
+Save
+Reload
+#Turn in all orbs for stamina
+Remove 32 SpiritOrb
+#Use MightyThistle, EnduraCarrot, Durian and LotusSeed for breaking slots
+Sell 2 MightyThistle 2 EnduraCarrot 2 Durian 2 LotusSeed
+Break 4 Slots
+#Then buy arrows from shop
+Buy 15 NormalArrow 5 BombArrow
+Equip RoyalClaymore
+Equip FalconBow
+Equip NormalArrow
+Equip Potlid
+Save
+#Drop items to reach negative count
+Drop 1 Torch 1 WoodcuttersAxe 1 RoyalClaymore 1 TravelersBow 1 FalconBow 1 Potlid 1 Fairy 3 EnduraFood 1 HastyElixir
+#Pick up 4 weapons for correct offset, can be any weapons but smart to pick up 3 of the ones you just dropped plus the torch in rito village
+Get 2 Torch 1 WoodcuttersAxe 1 RoyalClaymore
+Unequip Torch
+Reload
+#Shoot an arrow BEFORE pausing, and then pause and save without doing anything else. Unpausing or sorting will sync gamedata and corruption will not work
+Shoot 1 Arrow 
+Save
+Close Game
+Reload
