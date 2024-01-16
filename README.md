@@ -4,7 +4,7 @@ Import `objmap.json` to https://objmap.zeldamods.org/
 
 # IST Simulator
 
-Import `ist.txt` to https://dupl.itntpiston.app/
+Import `ist.txt` to https://ist.itntpiston.app/
 
 # Notes
 
