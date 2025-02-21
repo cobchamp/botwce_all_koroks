@@ -1,37 +1,49 @@
-# Arriving in Rito Village
-Initialize 1 Torch 1 WoodcuttersAxe 1 RoyalClaymore 1 TravelersBow 1 FalconBow 1 NormalArrow 1 Potlid 1 Ruby 2 HylianShroom 2 SpicyPepper 2 Apple 2 MightyThistle 5 EnduraCarrot 2 Durian 5 LotusSeed 1 HightailLizard 1 AncientCore 1 Fairy 1 Slate 8 SpiritOrb 1 Glider
-#Cook 3 Endura Meal and 1 Speed Potion
-Drop 3 EnduraCarrot 3 LotusSeed 1 HightailLizard 1 AncientCore
-Get 3 EnduraFood 1 HastyElixir
-#Sell Ruby and use HylianShroom, SpicyPepper and Apple for breaking slots
-Sell 1 Ruby 2 HylianShroom 2 SpicyPepper 2 Apple
-Break 3 Slots
-Save
-Reload
-#Sort key items to sync gamedata
-Sync GameData
-Save
-Reload
-#Turn in all orbs for stamina
-Remove 32 SpiritOrb
-#Use MightyThistle, EnduraCarrot, Durian and LotusSeed for breaking slots
-Sell 2 MightyThistle 2 EnduraCarrot 2 Durian 2 LotusSeed
-Break 4 Slots
-#Then buy arrows from shop
-Buy 15 NormalArrow 5 BombArrow
-Equip RoyalClaymore
-Equip FalconBow
-Equip NormalArrow
-Equip Potlid
-Save
-#Drop items to reach negative count
-Drop 1 Torch 1 WoodcuttersAxe 1 RoyalClaymore 1 TravelersBow 1 FalconBow 1 Potlid 1 Fairy 3 EnduraFood 1 HastyElixir
-#Pick up 4 weapons for correct offset, can be any weapons but smart to pick up 3 of the ones you just dropped plus the torch in rito village
-Get 2 Torch 1 WoodcuttersAxe 1 RoyalClaymore
-Unequip Torch
-Reload
-#Shoot an arrow BEFORE pausing, and then pause and save without doing anything else. Unpausing or sorting will sync gamedata and corruption will not work
-Shoot 1 Arrow 
-Save
-Close Game
-Reload
+Get 1 Spear 1 torch 1 PotLid 3 HylianShroom 4 Pepper 1 TravelersBow 1 Slate
+unequip shield
+Save as auto
+Get 5 Arrows 5 SpiritOrb 5 KorokSeed 1 Glider 1 hightaillizard 3 apples 1 fairy 2 big 2 radish 3 endurashroom 1 ancient core
+drop 1 apple 1 shroom 2 pepper 1 endurashroom
+with 1 pepper 1 shroom 1 apple 1 endurashroom
+break 4 slots
+pickup 1 apple 1 shroom 1 pepper 1 endurashroom
+with 1 pepper 2 shroom 2 apple 2 endurashroom
+break 4 slots
+pickup 1 pepper
+with 2 big 2 radish 2 pepper
+get 3 hotfootedfrog
+break 3 slots
+pickup 1 hearty radish
+with 1 hearty radish
+get 1 heartyelixir
+with 3 hotfootedfrog 1 hightaillizard 1 ancientcore
+get 1 endurafood
+get 1 speedfood
+get 1 fire arrow
+get 1 bomb arrow
+equip bomb arrow
+eat heartyelixir
+get royalguardsclaymore
+drop 1 spear 1 torch 1 royalguardsclaymore 1 potlid
+pickup 1 royalguardsclaymore
+save
+eat 1 endurafood 1 speedfood 1 fairy
+pickup 1 torch 1 spear
+pickup 1 hylian shield
+unequip royalguardsclaymore
+reload
+save
+get 1 truffle
+reload auto
+#glitched cursor
+drop 3 shroom 1 fairy 4 pepper 1 potlid 1 spear 1 torch
+unequip bow
+reload
+shoot 1 arrow
+save
+eat 2 endurafood 2 speedfood
+reload
+sync gamedata
+save
+reload
+remove 40 orbs
+#←↑→→←←←→  R+L then 3 to the right, a to equip, shoot an arrow (damage shield), remove bow/shield, close menu, equip
